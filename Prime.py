@@ -1,6 +1,6 @@
 a=int(input("Enter a number to check if its prime: "))
 flag=0
-for i in range (2,(a//2)+1):
+for i in range (2,(a//2)+1):#for i in range (2,a):    
     if(a%i==0):
         flag=1
         break
