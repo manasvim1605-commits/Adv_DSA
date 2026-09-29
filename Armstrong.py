@@ -3,9 +3,10 @@ temp=n
 sum=0
 while(temp!=0):
     ld=temp%10
-    sum=sum*10+ld
+    cube=ld*ld*ld
+    sum=sum+cube
     temp=temp//10
 if(n==sum):
-    print("Palindrome number")
+    print("Armstrong number")
 else:
-    print("not a Palindrome number")
+    print("not an Armstrong number")
