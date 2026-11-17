@@ -24,6 +24,13 @@ class PQ:
                     temp=temp.next
             prev.next=new_node
             new_node.next=temp
+    def dequeue(self):
+        if self.front:
+            temp=self.front
+            print("Node is deleted ",temp.data)
+            self.front=self.front.next
+        else:
+            print("Queue is empty")
     def display(self):
         temp=self.front
         while temp:
@@ -37,4 +44,11 @@ pq.enqueue(node(200,6))
 pq.enqueue(node(300,3))
 pq.enqueue(node(400,1))
 pq.enqueue(node(500,7))
+pq.display()
+pq.dequeue()
+pq.dequeue()
+pq.dequeue()
+pq.dequeue()
+pq.dequeue()
+pq.dequeue()
 pq.display()
